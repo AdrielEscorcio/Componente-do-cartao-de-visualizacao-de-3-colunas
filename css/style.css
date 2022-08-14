@@ -1,0 +1,138 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Lexend-Deca;
+  src: url(../font/LexendDeca-Regular.ttf);
+}
+
+@font-face {
+  font-family: Big-Shoulders-Display;
+  src: url(../font/BigShouldersDisplay-Bold.ttf);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  font-size: 15px;
+  font-family: Lexend-Deca;
+  color: hsla(0, 0%, 100%, 0.75);
+  background-color: hsl(0, 0%, 95%);
+}
+
+h2 {
+  font-family: Big-Shoulders-Display;
+  color: hsl(0, 0%, 95%);
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+
+.conteiner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 890px;
+  max-height: 1440px;
+  border-radius: 10px;
+}
+
+.card {
+  display: grid;
+  gap: 30px;
+  padding: 43px;
+}
+
+.card img {
+  width: 50px;
+}
+
+.card a {
+  margin-top: 70px;
+  padding: 10px;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 30px;
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.card a:hover{
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);;
+}
+
+.card p {
+  line-height: 25px;
+}
+
+.laranja {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px;
+}
+
+.laranja a {
+  color: hsl(31, 77%, 52%);
+}
+
+.laranja a:hover{
+  background-color: hsl(31, 77%, 52%);
+    
+}
+
+.verde {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.verde a {
+  color: hsl(184, 100%, 22%);
+}
+
+.verde a:hover{
+  background-color: hsl(184, 100%, 22%);
+}
+
+.escuro {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0;
+}
+
+.escuro a {
+  color: hsl(179, 100%, 13%);
+}
+
+.escuro a:hover {
+  background-color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 700px) {
+  body {
+    height: 110vh;
+  }
+  .conteiner {
+    grid-template-columns: 1fr;
+    max-width: 375px;
+  }
+
+  .card a {
+    margin-top: 0;
+  }
+
+  .laranja {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .escuro {
+    border-radius: 0 0 10px 10px;
+  }
+  
+}
